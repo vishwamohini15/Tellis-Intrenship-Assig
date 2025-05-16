@@ -1,0 +1,39 @@
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 30px;
+  margin-top: 20px;
+}
+
+.footer-section h4, .footer-columns h5 {
+  color: #00aaff;
+  margin-bottom: 10px;
+}
+
+.footer p, .footer-columns p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-disclaimer {
+  margin-top: 20px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #bbb;
+}
+
+.footer-disclaimer p {
+  margin: 0;
+}
