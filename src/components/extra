@@ -127,3 +127,32 @@
       margin-bottom: 20px;
     }
 }
+
+
+
+...........services nav.................
+ <div
+                        className="relative"
+                        onMouseEnter={() => setIsServicesDropdownOpen(true)}
+                        onMouseLeave={() => setIsServicesDropdownOpen(false)}
+                    >
+                        <button className="nav-link services-button">
+                            Services
+                            <span className={`dropdown-icon ${isServicesDropdownOpen ? 'open' : ''}`}>▼</span>
+                        </button>
+                        {isServicesDropdownOpen && (
+                            <div className="dropdown-menu">
+                                <div className="dropdown-content">
+                                    <a href="/service1" className="dropdown-item">
+                                        Service 1
+                                    </a>
+                                    <a href="/service2" className="dropdown-item">
+                                        Service 2
+                                    </a>
+                                    <a href="/service3" className="dropdown-item">
+                                        Service 3
+                                    </a>
+                                </div>
+                            </div>
+                        )}
+                    </div>

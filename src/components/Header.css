@@ -5,6 +5,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    height: 110px;
     z-index: 100;
     transition: background-color 0.3s ease;
     display: flex;
@@ -24,29 +25,51 @@
 
 
 .logo-link {
-    font-size: 24px;
+    font-size: 30px;
+    margin-left: 25px;
     font-weight: bold;
     color: #fff;
     text-decoration: none;
+    
 }
 
 .nav {
     display: flex;
     align-items: center;
+    justify-content: start;
     margin: 0;
     padding: 0;
+     width: 800px;
+     padding: 14px;
+     text-decoration: none;
+    /* background-color: red; */
 }
+
 
 .nav-link {
     margin: 0 15px;
     text-decoration: none;
-    color: #fff;
-    font-size: 16px;
-    transition: color 0.3s ease;
+    /* color: #fff; */
+    font-size: 18px;
+    /* transition: color 0.3s ease; */
+    padding: 13px;
+   
 }
 
 .nav-link:hover {
-    color: #ffcc00;
+    /* color: #ffcc00; */
+    border: 2px solid white;
+    border-radius: 30px;
+    
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+    /* border: none; */
+    transition-duration: .1s;
+    background-color: whitesmoke;
+    color: rgb(250, 4, 4);
+    outline: none;
 }
 
 .nav-link.active{
@@ -68,7 +91,8 @@
 
 /* Green background for home page top */
 .header.home {
-    background-color: rgba(40, 167, 69, 0.9); /* #28a745 with 90% opacity */
+    /* background-color: rgba(40, 167, 69, 0.9); #28a745 with 90% opacity */
+   background-color: #004733;
 }
 
 .header.home .nav-link {

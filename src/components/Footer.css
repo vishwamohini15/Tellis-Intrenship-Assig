@@ -1,8 +1,9 @@
 .footer {
-  background-color: #222;
-  color: #fff;
+  background-color: white;
+  /* color: #fff; */
   padding: 30px;
   margin-top: 20px;
+  padding: 2rem 10rem;
 }
 
 .footer-section h4, .footer-columns h5 {
@@ -28,12 +29,22 @@
 }
 
 .footer-disclaimer {
-  margin-top: 20px;
+  margin-top: 80px;
   font-size: 12px;
   line-height: 1.5;
-  color: #bbb;
+  /* color: #bbb; */
+
 }
 
 .footer-disclaimer p {
   margin: 0;
+}
+
+.hrbold{
+  font-weight: 700;
+  font-size: 90px;
+  background-color: rgb(195, 184, 184);
+  height: 3px;
+  display: flex;
+  flex-direction: column;
 }

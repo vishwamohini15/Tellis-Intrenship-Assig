@@ -5,11 +5,27 @@
 }
 
 .start-header {
-  display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    border-bottom: 4px solid var(--bg-fif);
+    background-color: #fffdfa;
+    padding: 2rem 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  border-bottom: 3px solid #000; 
+
+
+  /* display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  border-bottom: 3px solid #000;
+  border-bottom: 3px solid #000; */
+}
+.start-header h2{
+  color: green;
+  font-size: 26px;
 }
 
 .help-section {
@@ -19,7 +35,12 @@
 }
 
 .phone-icon {
-  font-size: 20px;
+  font-size: 22px;
+  height: 33px;
+  width: 33px;
+  border-radius: 18px;
+  background-color: grey;
+  border: 2px solid silver ;
 }
 
 .line {
@@ -29,28 +50,34 @@
 }
 
 .intro h1 {
-  font-size: 28px;
-  margin: 10px 0;
+  font-size: 38px;
+  font-weight: 600;
+  margin: 10px 8px;
 }
 
 .intro p {
-  font-size: 18px;
+   font-size: 38px;
+  font-weight: 600;
   margin: 5px 0;
 }
 
 .options {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   gap: 20px;
   margin: 20px 0;
+   padding:1rem 22rem 5rem 22rem;
 }
 
 .option {
-  padding: 10px 20px;
+  padding: 20px;
   border: 3px solid #000;
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s;
+  /* align-self:self-start; */
+  /* width: 400px; */
 }
 
 .option:hover {
@@ -58,31 +85,41 @@
 }
 
 .stats {
-  margin: 20px 0;
+  margin: 20px;
   font-size: 16px;
+  display: flex;
+  flex-direction: row;
+   align-items: center;
+   justify-content: center;
+  gap: 87px;
+}
+.stats span{
+  font-size: 40px;
+  font-weight: 700;
 }
 
 .info-box {
   margin: 30px auto;
-  width: 300px;
-  height: 380px;
+  width: 500px;
+  height: 200px;
   padding: 20px;
   border: 2px solid #000;
   border-radius: 12px;
 }
 
 .info-box p {
-  font-size: 18px;
+  font-size: 23px;
   margin-bottom: 10px;
 }
 
 .info-box ul {
-  list-style-type: disc;
+  /* list-style-type: disc; */
   margin: 10px 0 0 20px;
 }
 
 .info-box li {
-  font-size: 16px;
+  font-size: 18px;
+  padding: 5px;
 }
 
 

@@ -5,15 +5,14 @@ import './Header.css';
 // Dummy data for navigation items
 const navItems = [
     { label: 'Home', href: '/' },
-    { label: 'About', href: '/about' },
-    { label: 'Calculator', href: '/calculator' },
-    { label: 'Start', href: '/start' },
+    { label: 'About Us', href: '/about' },
+    { label: 'Mortgage Calculator', href: '/calculator' },
+    { label: 'StartPage', href: '/start' },
 ];
 
 const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-    const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
     const [location, setLocation] = useState(''); // Initialize with empty string
     const headerRef = useRef(null);
 
@@ -67,7 +66,7 @@ const Header = () => {
                 {/* Logo (Left) */}
                 <div className="logo">
                     <a href="/" className="logo-link">
-                        Logo
+                        Better
                     </a>
                 </div>
 
@@ -82,32 +81,7 @@ const Header = () => {
                             {item.label}
                         </Link>
                     ))}
-                    {/* Services Dropdown */}
-                    <div
-                        className="relative"
-                        onMouseEnter={() => setIsServicesDropdownOpen(true)}
-                        onMouseLeave={() => setIsServicesDropdownOpen(false)}
-                    >
-                        <button className="nav-link services-button">
-                            Services
-                            <span className={`dropdown-icon ${isServicesDropdownOpen ? 'open' : ''}`}>▼</span>
-                        </button>
-                        {isServicesDropdownOpen && (
-                            <div className="dropdown-menu">
-                                <div className="dropdown-content">
-                                    <a href="/service1" className="dropdown-item">
-                                        Service 1
-                                    </a>
-                                    <a href="/service2" className="dropdown-item">
-                                        Service 2
-                                    </a>
-                                    <a href="/service3" className="dropdown-item">
-                                        Service 3
-                                    </a>
-                                </div>
-                            </div>
-                        )}
-                    </div>
+                   
                 </nav>
 
                 {/* Contact and Sign In (Right) */}
