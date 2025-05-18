@@ -1,0 +1,355 @@
+/* Header.css */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+
+.logo-link {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffcc00;
+}
+
+.nav-link.active{
+   color: #ffcc00;
+}
+
+/* White background for scrolled state */
+.header.scrolled {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header.scrolled .nav-link {
+    color: #000;
+}
+.header.scrolled .nav-link:hover {
+    color: #007bff;
+}
+
+/* Green background for home page top */
+.header.home {
+    background-color: rgba(40, 167, 69, 0.9); /* #28a745 with 90% opacity */
+}
+
+.header.home .nav-link {
+    color: #fff;
+}
+
+.contact-signin {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #fff;
+}
+
+.contact-info span{
+  font-size: 16px;
+}
+
+.phone-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.signin-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.signin-link:hover {
+    color: #ffcc00;
+}
+
+.continue-button {
+    background-color: #ffcc00;
+    color: #000;
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+.continue-button:hover {
+    background-color: #e5b800;
+}
+
+
+
+/* Mobile Menu Styles */
+.mobile-menu-button {
+    display: none; /* Hide on desktop */
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.mobile-menu-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.mobile-menu {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 40;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobile-menu-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px;
+    width: 100%;
+}
+
+
+.mobile-menu-close-button {
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.mobile-menu-close-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 50px;
+}
+
+.mobile-nav-link {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.mobile-nav-link:hover {
+    color: #ffcc00;
+}
+
+.mobile-contact-signin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-top: auto;
+    margin-bottom: 30px;
+
+}
+
+.mobile-contact-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.mobile-phone-icon {
+    width: 20px;
+    height: 20px;
+}
+
+
+.mobile-signin-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.mobile-signin-link:hover {
+    color: #ffcc00;
+}
+
+.mobile-continue-button {
+    background-color: #ffcc00;
+    color: #000;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.mobile-continue-button:hover {
+    background-color: #e5b800;
+}
+
+
+/* Dropdown Styles */
+.relative {
+  position: relative;
+}
+
+.services-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+    color: #fff; /* Default text color */
+}
+
+.header.scrolled .services-button{
+  color: #000;
+}
+
+.services-button:hover {
+    color: #ffcc00;
+}
+
+.header.scrolled .services-button:hover {
+    color: #007bff;
+}
+
+
+.dropdown-icon {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s ease;
+}
+
+.dropdown-icon.open {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
+    width: 200px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+
+.dropdown-content {
+    padding: 10px 0;
+}
+
+.dropdown-item {
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {  /* Medium screens and below (md breakpoint in Tailwind is 768px) */
+    .nav {
+        display: none; /* Hide desktop nav on mobile */
+    }
+    .contact-signin {
+        display: none; /* Hide on mobile */
+    }
+    .mobile-menu-button {
+        display: block; /* Show mobile menu button */
+    }
+    .container {
+      padding: 10px 15px;
+    }
+    .logo-link{
+      font-size: 20px;
+    }
+
+    .header {
+      padding: 8px 16px;
+    }
+}
+
+@media (min-width: 769px) {
+  .mobile-menu{
+    display: none;
+  }
+}

@@ -24,20 +24,53 @@
 }
 
 .about-section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   padding: 50px 20px;
   text-align: center;
 }
+.about-section h2{
+  font-size: 30px;
+  font-weight: 600;
+  color: #017848;
+}
+
+.about-section h1{
+ margin-top: 2rem;
+    font-size: 3rem;
+    max-width: 1100px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #292b29;
+
+}
+
 
 .mission-section {
   background-color: #f5f5f5;
 }
 
 .status-section {
-  background-color: #e0e0e0;
+  display: flex;
+    max-width: 1100px;
+    height: 500px;
+    /* background-color: antiquewhite; */
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: .8rem;
+
+  /* background-color: #e0e0e0;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 60px 20px;
+  padding: 60px 20px; */
+
 }
 
 .status-content {
@@ -179,3 +212,5 @@
   background-color: #ccc;
   margin: 0 20px;
 }
+
+

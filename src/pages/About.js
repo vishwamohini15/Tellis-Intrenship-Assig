@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import Footer from '../components/Footer';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 import './About.css';
+import Header from '../components/Header';
 
 const About = () => {
  const [isVideoExpanded, setIsVideoExpanded] = useState(false);
@@ -15,26 +16,25 @@ const About = () => {
   return (
     <div className="about-page">
 
-        <header className="header">
-            <h1>Better Take Home</h1>
+        {/* <header className="header">
             <nav>
               <Link to="/" className="nav-link">Home</Link>
               <Link to="/about" className="nav-link">About</Link>
               <Link to="/calculator" className="nav-link">Calculator</Link>
               <Link to="/start" className="nav-link">Start</Link>
             </nav>
-          </header>
-
+          </header> */}
+<Header></Header>
 
 
       {/* Section 1: Mission */}
       <section className="about-section mission-section">
         <h2>Our mission</h2>
-        <p>We're making homeownership simpler, faster — and most importantly, more accessible for all Americans.</p>
+        <h1>We're making homeownership simpler, faster — <br /> and most importantly, more accessible for all <br /> Americans.</h1>
       </section>
 
       {/* Section 2: Status Quo */}
-      <section className="about-section status-section"  onClick={handleVideoClick}>
+      <section className=" status-section"  onClick={handleVideoClick}>
         <div className="status-content">
           <div className="status-text">
             <h3>The status quo is broken</h3>
@@ -47,12 +47,14 @@ const About = () => {
           </div>
           {/* <img src="/one-day-mortgage.webp" alt="Vishal Garg" className="status-image" /> */}
            <div className={`video-container ${isVideoExpanded ? 'expanded' : ''}`}>
-          <video
+          {/* <video
             className="about-video"
-            src="/localhost_3000 - Google Chrome 2025-03-31 13-50-32.mp4"
+            src="https://www.youtube.com/embed/1KjYlLBM9j4?si=A8ee_WORBZ8blwL_"
             controls
             alt="About Video"
-          />
+          /> */}
+<iframe className="about-video"  src="https://www.youtube.com/embed/1KjYlLBM9j4?si=A8ee_WORBZ8blwL_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen   controls></iframe>
+
         </div>
         </div>
       </section>

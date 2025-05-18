@@ -1,0 +1,129 @@
+ /* width: 593px;
+  height: 776px;
+  box-sizing: content-box;
+  max-width: 600px;
+  /* background-color: #008000; */
+  /* margin-top: 260px; */
+  /* position: absolute; */ */
+
+
+  //css for 2nd section of home
+  .story-section {
+    background-color: #e0e0e0;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.story-content {
+    display: flex;
+    flex-direction: column;  /* Stack items vertically by default */
+    align-items: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.story-name-container {
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+    color: #007bff; /* Make the names clickable and blue */
+}
+
+.story-name-container.active {
+    color: #003366; /* Darker blue for the active name */
+}
+
+.story-name-container:hover {
+    text-decoration: underline;
+}
+
+.story-image {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.story-text {
+    text-align: left;
+}
+
+.story-text h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.story-text p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.story-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+.story-button:hover {
+    background-color: #0056b3;
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+    .story-content {
+        flex-direction: column; /* Stack items vertically on larger screens too */
+        align-items: flex-start;  /* Align items to the start (left in LTR) */
+        text-align: left;
+    }
+
+    .story-image {
+        width: 50%;
+        max-width: 500px;
+        margin-bottom: 20px;
+    }
+
+    .story-text {
+        display: flex; /* Use flexbox for image and text alignment */
+        flex-direction: row; /* Image and text in a row */
+        align-items: center; /* Vertically center image and text */
+        gap: 20px; /* Space between image and text */
+        text-align: left;  /* text alignment */
+    }
+    .story-name-container{
+      text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .story-section{
+      padding: 30px 10px;
+    }
+    .story-content {
+        gap: 20px;
+    }
+    .story-name-container{
+      font-size: 1.2rem;
+    }
+    .story-text h2{
+      font-size: 1.5rem;
+    }
+    .story-text p{
+      font-size: 1rem;
+    }
+     .story-text {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .story-image{
+      margin-bottom: 20px;
+    }
+}
