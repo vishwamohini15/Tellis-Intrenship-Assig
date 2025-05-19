@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
+import Header from '../components/Header';
+
 import './MortgageCalculator.css';
 
 const MortgageCalculator = () => {
@@ -49,7 +51,11 @@ const MortgageCalculator = () => {
 
 
     return (
+        <div>
+        <Header></Header>
+
         <div className="mortgage-calculator-container">
+
             <h1 className="calculator-title">Mortgage Calculator</h1>
             <p className="calculator-description">
                 Our mortgage calculator includes key factors like homeowners association fees, property taxes, and private mortgage insurance (PMI).
@@ -182,21 +188,59 @@ const MortgageCalculator = () => {
                 <h3>Formula for calculating your debt-to-income (DTI) ratio:</h3>
                 {/* Placeholder for the DTI formula image  */}
                 <div className="formula-image-placeholder">
-                    [Image of DTI Formula]
+                    <img src="/dti-formula.webp" alt="" />
                 </div>
                 <p>DTI = (Total Monthly Debt Payments / Gross Monthly Income) * 100</p>
+                Here's an example of what calculating your DTI might look like:
+                    <img src="/dti-example.webp" alt="" />
             </div>
-
+<hr />
             <div className="tips-section">
-                <h3>How to use this mortgage calculator?</h3>
+                <h3>How to calculate monthly mortgage payments?</h3>
+                <div>
+                    Your monthly mortgage payment includes loan principal and interest, property taxes, homeowners insurance, and mortgage insurance (PMI), if applicable. While not typically included in your mortgage payment, homeowners also pay monthly utilities and sometimes pay homeowners association (HOA) fees, so it's a good idea to factor these into your monthly budget. This mortgage calculator factors in all these typical monthly costs so you can really crunch the numbers.
+                </div>
+                <h3>Formula for calculating monthly mortgage payments</h3>
+                <div>
+                    The easiest way to calculate your mortgage payment is to use a calculator, but for the curious or mathematically inclined, here's the formula for calculating principal and interest yourself:
+                </div>
                  {/* Placeholder for the usage tips image */}
                 <div className="tips-image-placeholder">
-                    [Image of Calculator Tips]
+                    <img src="/monthly-mortgage-payments-formula.webp" alt="" />
                 </div>
-                <p>
+                <div>Where:</div>
+                <ul>
+                    <li>M is monthly mortgage payments</li>
+                    <li>P is the principal loan amount (the amount you borrow)</li>
+                    <li>r is the monthly interest rate</li>
+                    <li>n is the total number of payments in months</li>
+                </ul>
+                <div>Here's a simple example:</div>
+                <img src="/monthly-mortgage-payments-example.webp" alt="" />
+                    <div>
+                        This formula assumes a fixed-rate mortgage, where the interest rate remains constant throughout the loan term. And remember, you’ll still need to add on taxes, insurance, utilities, and HOA fees if applicable.
+                    </div>
+                <div>
+                    <h3>How to use this mortgage calculator?</h3>
+                    <div>
                     Play around with different home prices, locations, down payments, interest rates, and mortgage lengths to see how they impact your monthly mortgage payments...
-                </p>
+                </div>
+                <br />
+                <div>
+                    Increasing your down payment and decreasing your interest rate and mortgage term length will make your monthly payment go down. Taxes, insurance, and HOA fees will vary by location. If you enter a down payment amount that's less than 20% of the home price, private mortgage insurance (PMI) costs will be added to your monthly mortgage payment. As the costs of utilities can vary from county to county, we've included a utilities estimate that you can break down by service. If you're thinking about buying a condo or into a community with a Homeowners Association (HOA), you can add HOA fees.
+                </div>
+                <br />
+                <div>
+                The only amounts we haven't included are the money you'll need to save for annual home maintenance/repairs or the costs of home improvements. To see how much home you can afford including these costs, take a look at the Better home affordability calculator.
+
+                </div>
+                <br />
+                <div>
+                    Fun fact: Property tax rates are extremely localized, so two homes of roughly the same size and quality on either side of a municipal border could have very different tax rates. Buying in an area with a lower property tax rate may make it easier for you to afford a higher-priced home.
+                </div>
+                </div>
             </div>
+        </div>
         </div>
     );
 };

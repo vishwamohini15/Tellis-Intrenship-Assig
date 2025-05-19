@@ -44,6 +44,10 @@
      text-decoration: none;
     /* background-color: red; */
 }
+.nav a{
+     text-decoration: none;
+    
+}
 
 
 .nav-link {
