@@ -1,5 +1,4 @@
 .mortgage-calculator-container {
-    /* max-width: 800px; */
     margin: 20px auto;
     padding: 35px 80px;
     background-color: #f4f4f4;
@@ -80,12 +79,6 @@
     margin-bottom: 15px;
 }
 
-.payment-breakdown {
-    margin: 0;
-    padding: 0;
-
-}
-
 .payment-breakdown h3 {
     font-size: 1.3rem;
     margin-bottom: 15px;
@@ -93,133 +86,63 @@
     font-weight: bold;
 }
 
-.payment-breakdown p {
-    font-size: 1rem;
-    color: #555;
+.payment-breakdown .breakdown-row {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 10px;
-}
-.payment-breakdown .breakdown-row{
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-  font-size: 1rem;
-}
-
-.explanation-section {
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-}
-
-.explanation-section h3 {
-    font-size: 1.3rem;
-    margin-bottom: 15px;
-    color: #3498db;
-    font-weight: bold;
-}
-
-.explanation-section p {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    color: #555;
-}
-
-.formula-section {
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-}
-
-.formula-section h3 {
-    font-size: 1.3rem;
-    margin-bottom: 15px;
-    color: #3498db;
-    font-weight: bold;
-    padding: 10px 0;
-}
- .text{
-    padding: 10px;
-}
-
-.formula-section p {
     font-size: 1rem;
-    line-height: 1.7;
-    color: #555;
-    margin-bottom: 15px;
 }
 
-.formula-image-placeholder {
-    width: 92%;
-    height: 200px;
+.calculate-button {
+    padding: 12px 24px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
     border-radius: 5px;
-    margin-top: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #888;
-    font-size: 0.5rem;
-    padding: 9px 0;
-}
-
-
-.tips-section {
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-}
-
-.tips-section h3 {
-    font-size: 1.3rem;
-    margin-bottom: 15px;
-    color: #3498db;
-    font-weight: bold;
-}
-
-.tips-section p {
+    cursor: pointer;
     font-size: 1.1rem;
-    line-height: 1.7;
-    color: #555;
-}
-
-.tips-image-placeholder {
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
     width: 100%;
-    height: 200px;
-    background-color: #ddd;
-    border-radius: 5px;
-    margin-top: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #888;
-    font-size: 0.9rem;
-}
-
-.calculate-button{
-  padding: 12px 24px;
-  background-color: #0056b3;  
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1.1rem;
-  transition: background-color 0.3s ease;
-  margin-top: 10px;
-  width: 100%;
 }
 
 .calculate-button:hover {
     background-color: #007bff;
 }
 
+@media (max-width: 1024px) {
+    .mortgage-calculator-container {
+        padding: 20px;
+    }
 
-@media (max-width: 768px) {
+    .calculator-title {
+        font-size: 2rem;
+    }
+
     .input-section {
         grid-template-columns: 1fr;
         gap: 15px;
     }
 
+    .input-group input {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .payment-section {
+        padding: 15px;
+    }
+
+    .monthly-payment {
+        font-size: 1.8rem;
+    }
+
+    .payment-breakdown h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
     .mortgage-calculator-container {
         padding: 15px;
     }
@@ -231,24 +154,68 @@
     .calculator-description {
         font-size: 1rem;
     }
-    .input-group label{
-      font-size: 0.9rem;
-    }
-     .input-group input{
-      font-size: 1rem;
-      padding: 10px;
-    }
-    .payment-section{
-      padding: 15px;
-    }
-    .payment-breakdown p{
-      font-size: 1rem;
-    }
-    .payment-breakdown h3{
-      font-size: 1.2rem;
-    }
-    .monthly-payment{
-      font-size: 1.5rem;
+
+    .input-group label {
+        font-size: 0.9rem;
     }
 
+    .input-group input {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+
+    .payment-section {
+        padding: 12px;
+    }
+
+    .monthly-payment {
+        font-size: 1.6rem;
+    }
+
+    .payment-breakdown h3 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .mortgage-calculator-container {
+        padding: 10px;
+    }
+
+    .calculator-title {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .calculator-description {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .input-section {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .input-group input {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .payment-section {
+        padding: 10px;
+    }
+
+    .monthly-payment {
+        font-size: 1.4rem;
+    }
+
+    .payment-breakdown h3 {
+        font-size: 1rem;
+    }
+
+    .calculate-button {
+        font-size: 1rem;
+        padding: 10px;
+    }
 }

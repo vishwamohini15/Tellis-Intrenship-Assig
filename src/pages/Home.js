@@ -7,7 +7,6 @@ import Footer from '../components/Footer';
 import './Home.css';
 import React, { useState } from 'react';
 import Header from '../components/Header';
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
 
 const Home = () => {
   const [selectedStory, setSelectedStory] = useState('Arian');
@@ -107,11 +106,13 @@ const Home = () => {
             {/* Display the selected story's content */}
             {storyData.find(story => story.name === selectedStory) && (
               <div className="story-text">
-                <img
+               <div className='fiximg'>
+                 <img
                   src={storyData.find(story => story.name === selectedStory).image}
                   alt={selectedStory}
                   className="story-image"
                 />
+               </div>
                 <div className="aboutimg">
                   <h2 >{storyData.find(story => story.name === selectedStory).quote}</h2>
                   <p>{storyData.find(story => story.name === selectedStory).trustpilot}</p>
