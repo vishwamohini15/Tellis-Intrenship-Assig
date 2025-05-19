@@ -166,8 +166,8 @@ display: flex;
 
 
 .story-image {
-  width: 90%;
-  height: 100%;
+ width: 70%;
+    height: 90%;
   background-color: red;
   border-radius: 16px;
   
@@ -338,8 +338,8 @@ text-align: center;
     height: auto;
   } */
   .fiximg{
-    height: 500px;
-    width: 400px;
+    height: 450px;
+    width: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
