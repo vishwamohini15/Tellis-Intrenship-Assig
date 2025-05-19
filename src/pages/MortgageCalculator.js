@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import Header from '../components/Header';
 
 import './MortgageCalculator.css';
+import Footer from '../components/Footer';
 
 const MortgageCalculator = () => {
     const [homePrice, setHomePrice] = useState(300000);
@@ -180,19 +181,23 @@ const MortgageCalculator = () => {
             <div className="explanation-section">
                 <h3>How does this mortgage calculator help me?</h3>
                 <p>
-                    When deciding how much house you can afford, one of the most important pieces to determine is whether a home will fit into your monthly budget...
+                    When deciding how much house you can afford, one of the most important pieces to determine is whether a home will fit into your monthly budget. A mortgage calculator helps you understand the monthly cost of a home. And ours will allow you to enter different down payments and interest rates to help determine what is affordable for you.
                 </p>
             </div>
-
+                <br />
             <div className="formula-section">
-                <h3>Formula for calculating your debt-to-income (DTI) ratio:</h3>
+                <h3>How much monthly mortgage payment can I afford?</h3>
+                <div className='text' >
+                    Your DTI is the balance between your income and your debt. It helps lenders understand how safe or risky it is for them to approve your loan. A DTI ratio represents how much of your gross monthly income is spoken for by creditors, and how much of it is left over to you as disposable income. It's most commonly written as a percentage. For example, if you pay half your monthly income in debt payments, you would have a DTI of 50%
+                </div>
+
                 {/* Placeholder for the DTI formula image  */}
                 <div className="formula-image-placeholder">
                     <img src="/dti-formula.webp" alt="" />
                 </div>
                 <p>DTI = (Total Monthly Debt Payments / Gross Monthly Income) * 100</p>
                 Here's an example of what calculating your DTI might look like:
-                    <img src="/dti-example.webp" alt="" />
+                    <img src="/dti-example.webp" alt=""  />
             </div>
 <hr />
             <div className="tips-section">
@@ -241,6 +246,8 @@ const MortgageCalculator = () => {
                 </div>
             </div>
         </div>
+        <Footer></Footer>
+
         </div>
     );
 };

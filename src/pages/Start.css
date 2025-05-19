@@ -33,6 +33,10 @@
   align-items: center;
   gap: 5px;
 }
+.callpp{
+  margin-right: 10px;
+
+}
 
 .phone-icon {
   font-size: 22px;

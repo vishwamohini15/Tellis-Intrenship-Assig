@@ -90,12 +90,14 @@ const Header = () => {
                         <span>📞</span>
                         <span>+123 456 7890</span>
                     </div>
-                    <a href="/signin" className="signin-link">
+                    <a href="/" className="signin-link">
                         Sign In
                     </a>
+                   <a href="/">
                     <button className="continue-button">
                         Continue
                     </button>
+                   </a>
 
                     {/* Mobile Menu Button */}
                     <button

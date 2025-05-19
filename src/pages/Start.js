@@ -10,8 +10,15 @@ const Start = () => {
         <h2>Better <br /> Mortgage</h2>
         <div className="help-section">
           <span className="phone-icon" >📞</span>
-          <p>Need help? Call (+91) 1239432235</p>
+          <p className='callpp'>Need help? Call (+91) 1239432235</p>
+          <br /> 
+           <a href="/">
+                    <button className="continue-button">
+                        Continue
+                    </button>
+                   </a>
         </div>
+        
       </div>
 
       <div className="intro">
@@ -20,9 +27,22 @@ const Start = () => {
       </div>
 
       <div className="options">
-        <div className="option" > 🏡 Buying Home</div>
-        <div className="option">🐱‍💻Refinance My Mortgage</div>
-        <div className="option">💰 Get Cash from My Home</div>
+        <a href="/">
+        <div className="option" > 
+           🏡 Buying Home
+         </div>
+        </a>
+        <a href="/">
+        <div className="option">
+          🐱‍💻Refinance My Mortgage
+        </div>
+        </a>
+        <a href="/">
+        <div className="option">
+          💰 Get Cash from My Home
+        </div>
+        </a>
+        
       </div>
 
       <div className="stats">

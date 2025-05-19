@@ -6,11 +6,11 @@ import './About.css';
 import Header from '../components/Header';
 
 const About = () => {
- const [isVideoExpanded, setIsVideoExpanded] = useState(false);
+  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 
-  const handleVideoClick = () => {
-    setIsVideoExpanded(!isVideoExpanded);
-  };
+    const handleVideoClick = () => {
+        setIsVideoPlaying(true);
+    };
 
 
 
@@ -49,32 +49,37 @@ const About = () => {
       </section>
 
       {/* Section 2: Status Quo */}
-      <section className=" status-section"  onClick={handleVideoClick}>
-        <div className="status-content">
-          <div className="status-text">
-            <h3>The status quo is broken</h3>
-            <p>
-              The traditional processes around homeownership are opaque and stressful. Fees aren't transparent and some are 
-              simply outrageous in size. Traditional mortgage lending is rife with unnecessary fees and slow, painful processes. 
-              It's a system set up to benefit insiders — not you. Better.com CEO, Vishal Garg, set out to change that.
-            </p>
-            <button className="status-button">Read Vishal's Story</button>
-          </div>
-          {/* <img src="/one-day-mortgage.webp" alt="Vishal Garg" className="status-image" /> */}
-           <div className={`video-container ${isVideoExpanded ? 'expanded' : ''}`}>
-          {/* <video
-            className="about-video"
-            src="https://www.youtube.com/embed/1KjYlLBM9j4?si=A8ee_WORBZ8blwL_"
-            controls
-            alt="About Video"
-          /> */}
-            <div  className="about-video">
-<iframe   src="https://www.youtube.com/embed/1KjYlLBM9j4?si=A8ee_WORBZ8blwL_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen   controls></iframe>
-
+      <section className="status-section">
+            <div className="status-content">
+                <div className="status-text">
+                    <h3>The status quo is broken</h3>
+                    <p>
+                        The traditional processes around homeownership are opaque and stressful. Fees aren't transparent and some are
+                        simply outrageous in size. Traditional mortgage lending is rife with unnecessary fees and slow, painful processes.
+                        It's a system set up to benefit insiders — not you. Better.com CEO, Vishal Garg, set out to change that.
+                    </p>
+                    <button className="status-button">Read Vishal's Story</button>
+                </div>
+                {isVideoPlaying ? (
+                    <div className="video-container expanded">
+                    <iframe
+                        className="about-video"
+                        src="https://www.youtube.com/embed/1KjYlLBM9j4?si=A8ee_WORBZ8blwL_"
+                        title="YouTube video player"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowFullScreen
+                        style={{ width: '400px', height: '400px' }} // Inline styles for width and height
+                    ></iframe>
+                    </div>
+                ) : (
+                    <div className="image-container" onClick={handleVideoClick}>
+                      <span className='playbtn'> ▶</span>
+                       <img src="/vishal-mission.webp" alt="Vishal Garg" className="status-image"  />
+                    </div>
+                )}
             </div>
-        </div>
-        </div>
-      </section>
+        </section>
 
       {/* Section 3: Changing Things */}
       <section className="about-section change-section">

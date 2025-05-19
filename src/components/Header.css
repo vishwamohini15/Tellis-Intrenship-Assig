@@ -32,6 +32,10 @@
     text-decoration: none;
     
 }
+.header.scrolled .logo-link {
+    color: #04f695;
+}
+
 
 .nav {
     display: flex;
@@ -87,7 +91,7 @@
 }
 
 .header.scrolled .nav-link {
-    color: #000;
+    color: orange;
 }
 .header.scrolled .nav-link:hover {
     color: #007bff;
@@ -99,9 +103,7 @@
    background-color: #004733;
 }
 
-.header.home .nav-link {
-    color: #fff;
-}
+
 
 .contact-signin {
     display: flex;
@@ -120,6 +122,11 @@
   font-size: 16px;
 }
 
+.header.scrolled .contact-info span {
+    color: #04f695;
+}
+
+
 .phone-icon {
     width: 16px;
     height: 16px;
@@ -131,6 +138,11 @@
     font-size: 16px;
     transition: color 0.3s ease;
 }
+
+.header.scrolled .signin-link{
+    color: #04f695;
+}
+
 
 .signin-link:hover {
     color: #ffcc00;
@@ -147,6 +159,12 @@
     transition: background-color 0.3s ease;
     font-size: 16px;
 }
+
+.header.scrolled .continue-button {
+    background-color: #04f695;
+    color: white;
+}
+
 
 .continue-button:hover {
     background-color: #e5b800;

@@ -6,16 +6,6 @@
   text-align: center;
 }
 
-.nav-link {
-  margin: 0 10px;
-  color: white;
-  text-decoration: none;
-}
-
-.nav-link:hover {
-  text-decoration: underline;
-}
-
 
 
 .about-page {
@@ -65,11 +55,7 @@
     gap: 2rem;
     padding: .8rem;
 
-  /* background-color: #e0e0e0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 60px 20px; */
+  
 
 }
 
@@ -87,8 +73,18 @@
 }
 
 .status-image {
-  width: 300px;
+  width: 400px;
   height: auto;
+}
+.playbtn{
+  font-size: 40px;
+  background-color: white;
+  border: 3px solid rgb(5, 5, 5);
+  padding: 2px 6px;
+  border-radius: 50%;
+  position: absolute;
+  top: 126%;
+  left: 62%;
 }
 
 .status-button {

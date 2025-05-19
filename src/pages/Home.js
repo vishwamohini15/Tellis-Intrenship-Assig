@@ -60,59 +60,40 @@ const Home = () => {
 
     <div className="home-page">
 
-      {/* <header className="header">
-        <h1>Better Take Home</h1>
-        <nav>
-          <Link to="/" className="nav-link">Home</Link>
-          <Link to="/about" className="nav-link">About</Link>
-          <Link to="/calculator" className="nav-link">Calculator</Link>
-          <Link to="/start" className="nav-link">Start</Link>
-        </nav>
-      </header> */}
-
-
-
       {/* Section 1: Hero Section */}
-      <section className="hero-section">
-        <h1 className='heroText'>Mortgages <br /> made simple</h1>
-        <div className='rating'>
-          <div >
-            <button className='homestart'>Start my Approvel</button>
-            <p className='homepp'>⌚ 3min | No credit impact</p>
-          </div>
-
-          <div >
-            <div className='googlr-rate'>
-              <img src="/1000px-Google_-G-_Logo.svg_.png" alt="" className='googleimg' />
-              <span className=" checked">⭐</span>
-              <span className=" checked">⭐</span>
-              <span className=" checked">⭐</span>
-              <span className="checked">⭐</span>
-              <span className="checked">⭐</span>
+       <section className="hero-section">
+            <div className="hero-content-wrapper">
+                <h1 className="hero-text">
+                    Mortgages <br />
+                    made simple
+                </h1>
+                <div className="rating-and-button">
+                    <div className="button-container">
+                        <button className="home-start">Start my Approval</button>
+                        <p className="home-pp">⌚ 3min | No credit impact</p>
+                    </div>
+                    <div className="google-rating">
+                        <div className="google-rate">
+                            <img
+                                src="/1000px-Google_-G-_Logo.svg_.png"
+                                alt="Google Logo"
+                                className="google-img"
+                            />
+                            <span className="checked">⭐</span>
+                            <span className="checked">⭐</span>
+                            <span className="checked">⭐</span>
+                            <span className="checked">⭐</span>
+                            <span className="checked">⭐</span>
+                        </div>
+                        <p className="rate-pp">4.6 star | 3177 Google reviews</p>
+                    </div>
+                </div>
             </div>
-            <p className='ratepp'>4.6 star | 3177 Google review</p>
-          </div>
-        </div>
+            <div className="hero-image-wrapper">
+                <img src="/hero-variant.webp" alt="Hero" className="hero-image" />
+            </div>
+        </section>
 
-        <div  className="hero-image">
-        <img src="/hero-variant.webp" alt="Hero"  />
-
-        </div>
-      </section>
-
-      {/* Section 2: Story Section */}
-      {/* <section className="story-section">
-        <div className="story-content">
-          <img src="/still-quote-Arian.webp" alt="Person" className="story-image" />
-          <div className="story-text">
-            <h2>Find out why we're better</h2>
-            <p>See all our stories</p>
-            <p>Trustpilot</p>
-            <p>Excellent 4.4 out of 5</p>
-            <button className="story-button">See all our stories</button>
-          </div>
-        </div>
-      </section> */}
 
       {/* Section 2: Story Section */}
       <section className="story-section">

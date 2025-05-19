@@ -7,7 +7,8 @@
 }
 
 .footer-section h4, .footer-columns h5 {
-  color: #00aaff;
+  color: #007bff;
+  font-size: 22px;
   margin-bottom: 10px;
 }
 
